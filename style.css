@@ -1,0 +1,145 @@
+ 
+  @import url('https://fonts.googleapis.com/css2?family=Italianno&family=Poppins:wght@300;600&display=swap');
+ 
+ *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box; 
+     font-family: 'Italianno', cursive;
+     font-family: 'Poppins', sans-serif;
+} 
+html,body{
+     display: grid;
+     height: 100vh;
+     width: 100%;
+     background: linear-gradient(to right,#99004D  0%, #ff0080 100%);
+     place-items: center;
+} 
+.container{
+     background: #fff;
+     max-width: 350px;
+     width: 100%;
+     padding: 25px 30px;
+     border-radius: 5px;
+     -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+     -ms-border-radius: 5px;
+     -o-border-radius: 5px;
+     box-shadow:0 10px 10px rgba(0,0,0,0.9) ;
+} 
+.container form .title {
+     font-size: 30px;
+     font-weight: 600;
+     margin: 20px 0 10px 0;
+     position: relative;
+}  
+.container form .title::before{
+     content: "";
+     position: absolute;
+     height: 4px;
+     width: 33px;
+     bottom: 6px;
+     left: 0;
+     border-radius:100px;
+     background: linear-gradient(to right,#99004D  0%, #ff0080 100%);
+}
+.container form .input-box{
+    width: 100%;
+    height: 45px;
+    margin-top: 25px;
+    position: relative;
+       
+} 
+.container form .input-box input{
+     width: 100%;
+     height: 100%;
+     outline: none;
+     border: none;
+     font-size: 16px;
+} 
+.container form .underline::before{
+     content: "";
+     position: absolute;
+     bottom:0;
+     left: 0;
+     width: 100%;
+     height: 2px;
+     background:rgb(192, 188, 188);    
+} 
+.container form .underline::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    background: linear-gradient(to right,#16080f  0%, #ff0080 100%);
+    transition: all 0.3s ease ;
+    transform-origin: left;
+} 
+.container form .input-box input:focus ~ .underline::after,
+.container form .input-box input:valid ~ .underline::after{
+     transform: scaleX(1);
+     transform-origin: left; 
+}  
+
+.submit{
+     font-size: 17px;
+     color: #fff;
+     border-radius:5px ;
+     background: linear-gradient(to right,#99004D  0%, #ff0080 100%);
+     cursor: pointer;
+}  
+.container form .button{
+    margin: 40px 0 20px 0;
+}
+.submit:hover{
+    transition: all 0.3s ease;
+    background: linear-gradient(to left ,#16080f  0%, #ff0080 100%);
+    letter-spacing: 1px;
+  
+ 
+} 
+.container .options{
+     text-align: center;
+     font-size: 14px;
+} 
+.container .twittwr a,
+.container .Facebook a{
+     display: block;
+     width: 100%;
+     height: 45x;
+     font-size: 15px;
+     text-decoration: none;
+     padding-left:20px ;
+     color: #fff;
+     line-height: 45px;
+     border-radius: 5px;
+     -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+     -ms-border-radius: 5px;
+     -o-border-radius: 5px;
+}  
+.container .twittwr i,
+.container .Facebook i{
+
+      padding-right:12px ;
+      font-size: 20px;
+}
+.container .twittwr a{
+     background: linear-gradient(to left,blue 0%, rgb(140, 140, 231) 100%);
+}
+.container .twittwr a:hover{
+    background: linear-gradient(to right,blue 0%, rgb(140, 140, 231) 100%);
+}
+.container .Facebook a{
+    background: linear-gradient(to left,rgb(13, 13, 78) 0%, rgb(26, 26, 139) 100%);
+    margin: 20px 0 50px 0;
+
+ 
+}
+.container .Facebook a:hover{
+    background: linear-gradient(to right,rgb(13, 13, 78) 0%, rgb(26, 26, 139) 100%);
+ 
+}
